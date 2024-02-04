@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanoVeganShark - Game Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Add your custom styles here -->
+    <style>
+        body {
+            background-color: #f0f4f8; /* Pastel white */
+            color: #334155; /* Dark blue-gray */
+            font-family: 'Roboto', sans-serif; /* Use the chosen Google Font */
+        }
+
+        .main-section {
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 200px; /* Adjust the size as needed */
+            margin-bottom: 20px;
+        }
+
+        .game-container {
+            /*display: flex;*/
+            flex-direction: column;
+            height: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+        }            
+
+        .games-section {
+            padding: 20px;
+        }
+
+        .game-title {
+            font-size: 1rem;
+            color: #f6993f; /* Orange */
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .game-thumbnail {
+            width: 100%;
+            height: auto;
+            flex: 4; /* Adjust the ratio as needed */
+        }
+
+        .game-info {
+            margin-top: 10px;
+            font-size: 0.875rem;
+            color: #718096; /* Gray */
+            flex: 1;
+        }
+
+        .game-links {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .game-link {
+            color: #f6993f; /* Orange */
+            font-size: 1.25rem;
+            transition: color 0.3s ease;
+        }
+
+        .team-section {
+            padding: 30px;
+            background-color: #f6993f; /* Orange */
+            color: #fff; /* White */
+        }
+
+        .team-row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            flex: 0 0 calc(33.333% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .team-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .team-role {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        
+        .team-links {
+            display: flex;
+        }
+
+        .team-link {
+            color: #fff; /* White */
+            font-size: 0.575rem; /* Reduce the font size */
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body class="max-w-screen-lg mx-auto">
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <h1 class="text-4xl font-bold text-blue-500">NanoVeganShark</h1>
+        <p class="mt-4">Your cute teethy game companion</p>
+        <img src="main.png" alt="NanoVeganShark Logo" class="logo">
+    </section>
+
+    <section class="games-section">
+    <h2 class="text-2xl font-bold mb-4">The Games</h2>
+
+    <!-- Games Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Game 4 -->
+        <div class="game-container">
+            <h2 class="game-title">Memetation (2024)</h2>
+            <img src="memetation.png" alt="Game 4 Thumbnail" class="game-thumbnail">
+            <p class="game-info">Global Game Jam (2024)<br>Theme: "Make me laugh"</p>
+            <div class="game-links">
+                <a href="https://globalgamejam.org/games/2024/nanovegansharks-game-2" class="game-link"><i class="fas fa-play-circle"></i> Play</a>
+                <a href="https://globalgamejam.org/games/2024/nanovegansharks-game-2" class="game-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>            
+        </div>
+
+        <!-- Game 3 -->
+        <div class="game-container">
+            <h2 class="game-title">Fireflies (2021)</h2>
+            <img src="fireflies.png" alt="Game 3 Thumbnail" class="game-thumbnail">
+            <p class="game-info">Global Game Jam (2021)<br>Theme: "Lost & Found"</p>
+            <div class="game-links">
+                <a href="https://v3.globalgamejam.org/2021/games/firefly-guidance-0" class="game-link"><i class="fas fa-play-circle"></i> Play</a>
+                <a href="https://v3.globalgamejam.org/2021/games/firefly-guidance-0" class="game-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>               
+        </div>
+        
+        <!-- Game 2 -->
+        <div class="game-container">
+            <h2 class="game-title">MWGA (2020)</h2>
+            <img src="mtwga.png" alt="Game 2 Thumbnail" class="game-thumbnail">
+            <p class="game-info">Global Game Jam (2020)<br>Theme: "Repair"</p>
+            <div class="game-links">
+                <a href="https://v3.globalgamejam.org/2020/games/make-wall-great-again-2" class="game-link"><i class="fas fa-play-circle"></i> Play</a>
+                <a href="https://v3.globalgamejam.org/2020/games/make-wall-great-again-2" class="game-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>            
+        </div>
+
+        <!-- Game 1 -->
+        <div class="game-container">
+            <h2 class="game-title">Last Standing Bernardo (2019)</h2>
+            <img src="last_standing_bernardo.png" alt="Last Standing Bernardo Thumbnail" class="game-thumbnail">
+            <p class="game-info">Global Game Jam (2019)<br>Theme: "What Home Means to You"</p>
+            <div class="game-links">
+                <a href="https://v3.globalgamejam.org/2019/games/last-standing-bernardo" class="game-link"><i class="fas fa-play-circle"></i> Play</a>
+                <a href="https://v3.globalgamejam.org/2019/games/last-standing-bernardo" class="game-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <h2 class="game-title">ConnHex (2018)</h2>
+            <img src="connhex.png" alt="Last Standing Bernardo Thumbnail" class="game-thumbnail">
+            <p class="game-info">Global Game Jam (2018)<br>Theme: "Transmission"</p>
+            <div class="game-links">
+                <a href="https://v3.globalgamejam.org/2018/games/connhex" class="game-link"><i class="fas fa-play-circle"></i> Play</a>
+                <a href="https://v3.globalgamejam.org/2018/games/connhex" class="game-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+        </div>        
+
+
+
+
+
+    </div>
+    </section>
+
+
+    <h2 class="text-2xl font-bold mb-4">Meet the Team</h2>
+    <!-- Team Section -->
+    <section class="team-section">
+        
+
+        <!-- Team Row 1 -->
+        <div class="team-row">
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="team-name">Simona Berardi</div>
+                <div class="team-role">3D Artist</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/simona-berardi-530a9a51/?originalSubdomain=it" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="team-name">Andrea Crivello</div>
+                <div class="team-role">3D Artist/Animator</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/andrea-crivello-art/" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="team-name">Dario Facchini</div>
+                <div class="team-role">Developer</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/dariofacchini/?originalSubdomain=it" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>         
+        </div>
+
+        <!-- Team Row 2 -->
+        <div class="team-row">
+            <div class="team-member">
+                <div class="team-name">Alessandro Pastorino</div>
+                <div class="team-role">3D Artist/Animator</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/alessandro-pastorino-914431158/?originalSubdomain=it" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="team-name">Giovanni Patruno</div>
+                <div class="team-role">Tech Game Designer</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/giovanni-patruno-38a600105/?originalSubdomain=it" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-name">Andrea Peretti</div>
+                <div class="team-role">Developer</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/andreaperetti/?trk=people-guest_people_search-card&originalSubdomain=it" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>                
+
+            <!-- Team Member 5 --> 
+        </div>
+        <div class="team-row">
+            <div class="team-member">
+                <div class="team-name">Roberto Pesando</div>
+                <div class="team-role">Tech Artist / Shader Developer</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/robertop/" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>   
+
+            <div class="team-member">
+                <div class="team-name">Andrea Tarricone</div>
+                <div class="team-role">2D Artist/UI/SFX</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/andrea-tarricone-a0114290/?originalSubdomain=it" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>               
+            <div class="team-member">
+                <div class="team-name">Lorenzo Valente</div>
+                <div class="team-role">Developer</div>
+                <div class="team-links">
+                    <a href="https://www.linkedin.com/in/valentelorenzo/?locale=en_US" class="team-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/alexjohnson" class="team-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.alexjohnson.com" class="team-link" target="_blank"><i class="fas fa-globe"></i> Homepage</a> -->
+                </div>
+            </div>               
+
+        </div>
+    </section>
+</body>
+</html>
